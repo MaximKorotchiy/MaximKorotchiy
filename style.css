@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: .3s;
+    font-family: 'Oswald', sans-serif;
+}
+  
+a {
+    cursor: pointer;
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    background-image: url("./img/pexels-photo-4183079.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.blur {
+    backdrop-filter: blur(35px);
+    /* background: rgba(255, 255, 255, 0.2); */
+    height: 100vh;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0)!important;
+    backdrop-filter: blur(7px);
+}
+
+section div {
+    width: 100%;
+    height: 100vh;
+}
+
+
+section div#laravel {
+    background: rgba(239,59,45, 0.1);
+}
+
+section div#vue {
+    background: rgba(65,184,131, 0.1);
+}
+
+section div#laravel {
+    background: rgba(239,59,45, 0.1);
+}
+
+section div img {
+    padding-bottom: 250px!important;
+    transform: rotate(-15deg);
+    
+}
+
+section div#laravel img {
+    filter: drop-shadow(300px 400px 6px rgba(239,59,45, .5));   
+}
+
+section div#vue img {
+    filter: drop-shadow(300px 400px 6px rgba(65,184,131, 0.5));   
+}
+
+section div h3 {
+    transform: skew(-15deg);
+}
+  
+
+@media screen and (max-width: 768px) {
+    section div .col {
+        height: 50vh!important;
+        align-items: flex-end!important;
+    }
+
+    section div img {
+        transform: rotate(0deg);
+        padding-bottom: 0px!important;
+    }
+
+    section div h3 {
+        transform: skew(0deg);
+    }
+}
